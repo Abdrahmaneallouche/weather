@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>weather</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="bg-slate-900 flex justify-center items-center h-screen">
+  <section class=" max-w-xl w-full ">
+    <div class="box p-2 md:p-5 lg:p-5">
+     
+      <div class="search h-10 md:h-14 lg:h-14 w-full relative text-white  border border-black/50 rounded-xl">
+        <i class='bx bxs-map absolute text-base md:text-3xl lg:text-3xl left-2 top-1/2 -translate-y-1/2' ></i>
+        <input class="absolute outline-none w-full h-full bg-transparent placeholder:text-white pl-7 lg:pl-10 text-white pr-7 lg:pr-10 text-xs md:text-2xl lg:text-2xl font-bold" type="text" placeholder="Enter Your Location">
+        <button class="absolute  text-base md:text-3xl lg:text-3xl top-1/2 -translate-y-1/2 right-2"><i class=' bx bx-search-alt text-white'></i></button>
+      </div>
+
+<div class="weather-info ">
+     <div class="weather  my-7">
+        <div class="text-center">
+          <img src="images/sun.png" class="w-3/4 md:w-1/2 lg:w-1/2 mx-auto" alt="">
+          <p class="temp my-4 text-white  font-extrabold relative">0<span class="text-xl absolute ml-1">°C</span></p>
+          <p class=" desc text-3xl font-bold text-white">sunny day</p>
+        </div>
+     </div>
+<div class="details flex justify-between">
+<div class="flex water items-center text-white">
+  <i class='bx bx-water mr-3'></i>
+  <div class="boxi font-bold ">
+    <span class="humid block text-base md:text-xl lg:text-xl">0<span>%</span></span>
+    <span class="block text-xs md:text-lg lg:text-lg">humidity</span>
+  </div>
+</div>
+
+<div class="flex items-center wind text-white">
+  <i class='bx bx-wind mr-3'></i>
+  <div class="font-bold boxi">
+    <span class="windSpeed block text-base md:text-xl lg:text-xl">0<span>Km/H</span></span>
+    <span class="block text-xs md:text-lg lg:text-lg nowrap">wind speed</span>
+  </div>
+</div>
+
+
+</div>
+
+
+
+</div>
+<div class="notfound">
+  <div class="weather ">
+    <img src="images/not-found.png" class="" alt="">
+    <p class="mt-10">Oops! Location not found!</p>
+  </div>
+</div>
+
+    </div>
+  </section>
+  <script src="master.js"></script>
+</body>
+</html>
